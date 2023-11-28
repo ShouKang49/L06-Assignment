@@ -52,8 +52,16 @@
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
                             <i class="fa fa-bell"></i>
                         </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a href="#" class="dropdown-header">Read</a></li>
+                            <li><a href="#" class="dropdown-header">Unread</a></li>
+                        </ul>
                     </li>
-
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <img src="assignmentImages/user icon.png" alt="" style="width:11%" class="bg-success rounded-pill" id="userIcon">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -118,7 +126,7 @@
                     <div class="container">
                         <div class="row pt-5 pb-5">
                             <h3>Featured Courses</h3>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/html-5.png" class="card-img-top" alt="html">
                                     <div class="card-body">
@@ -138,7 +146,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/xd.png" class="card-img-top" alt="UIUX">
                                     <div class="card-body">
@@ -158,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/apple.png" class="card-img-top" alt="Plants">
                                     <div class="card-body">
@@ -178,7 +186,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/js.png" class="card-img-top" alt="Plants">
                                     <div class="card-body">
@@ -207,11 +215,11 @@
                     <div class="container">
                         <div class="row pt-5 pb-5">
                             <h3>Featured Courses</h3>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/java.png" class="card-img-top" alt="html">
                                     <div class="card-body">
-                                        <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                        <h5 class="card-title">Object-Oriented Programming</h5>
                                         <div class="card-body">
                                             <i class="fa fa-clock"></i> 2h 30m
                                         </div>
@@ -227,11 +235,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/php.png" class="card-img-top" alt="UIUX">
                                     <div class="card-body">
-                                        <h5 class="card-title">User Experience and Interface Design</h5>
+                                        <h5 class="card-title">Web Application Development</h5>
                                         <div class="card-body">
                                             <i class="fa fa-clock"></i> 2h 45m
                                         </div>
@@ -247,11 +255,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/python.png" class="card-img-top" alt="Plants">
                                     <div class="card-body">
-                                        <h5 class="card-title">IOS App Development using Xcode and Swift</h5>
+                                        <h5 class="card-title">Introduction to Programming</h5>
                                         <div class="card-body">
                                             <i class="fa fa-clock"></i> 4h 30m
                                         </div>
@@ -267,11 +275,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-lg-3 p-2">
+                            <div class="col-sm-6 col-md-6 col-lg-3 p-2">
                                 <div class="card w-52">
                                     <img src="assignmentImages/react.png" class="card-img-top" alt="Plants">
                                     <div class="card-body">
-                                        <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+                                        <h5 class="card-title">React.js Frameworks</h5>
                                         <div class="card-body">
                                             <i class="fa fa-clock"></i> 3h 45m
                                         </div>
@@ -292,11 +300,13 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev d-sm-block d-lg-block" type="button" data-bs-target="#cardCarousel"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+        <button class="carousel-control-next d-sm-block d-lg-block" type="button" data-bs-target="#cardCarousel"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -348,8 +358,12 @@
             });
 
             $('#cardCarousel').carousel({
-            interval: false 
-        });
+                interval: false
+            });
+
+            $("#userIcon").click(function(){
+                $(this).toggleClass("bg-success bg-secondary");
+            });
         });
     </script>
 </body>
