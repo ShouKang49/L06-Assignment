@@ -7,9 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        /* Additional styles can be added here */
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -23,15 +22,25 @@
                     <li class="nav-item">
                         <a class="nav-link" href="exercise1/index.html">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="exercise2/index.html">Courses</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu dropdown-menu-start">
+                            <li><a href="exercise2/index.html" class="dropdown-item">HTML</a></li>
+                            <li><a href="#" class="dropdown-item">CSS</a></li>
+                            <li><a href="#" class="dropdown-item">PHP</a></li>
+                            <li><a href="#" class="dropdown-item">JavaScript</a></li>
+                            <li><a href="#" class="dropdown-item">Python</a></li>
+                            <li><a href="#" class="dropdown-item">Java</a></li>
+                            <li><a href="#" class="dropdown-item">IOS</a></li>
+                            <li><a href="#" class="dropdown-item">React</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <form action="#" method="post" class="d-flex">
-                    <input type="text" class="form-control me-2" name="search" placeholder="Search">
+                <form action="#" method="post" class="d-flex" >
+                    <input type="text" class="form-control me-2" name="search" id="search" placeholder="Search">
                     <button type="submit" class="btn btn-primary">
                         <i class="fa fa-search"></i>
                     </button>
@@ -39,9 +48,10 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-bell"></i>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -115,7 +125,7 @@
                                    <i class="fa fa-user-circle"></i> Hannah Lim 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark"></i>
+                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +144,7 @@
                                     <i class="fa fa-user-circle"></i> Julia Lee
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark"></i>
+                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +163,7 @@
                                    <i class="fa fa-user-circle"></i> Ryan Low 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark"></i>
+                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +182,7 @@
                                     <i class="fa fa-user"></i> Azhar Kamar 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark"></i>
+                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -189,5 +199,16 @@
         Support
     </footer>
     <!--https://shoukang49.github.io/L06-Assignment/index.html-->
+    <script>
+        $(document).ready(function(){
+            var searchTags = ["HTML","CSS","PHP","JavaScript","Python","Java","iOS","Swift","React","Web Design","Web Development"];
+
+            $("#search").autocomplete({
+                source: searchTags
+            });
+
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
