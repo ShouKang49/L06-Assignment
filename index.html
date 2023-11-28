@@ -125,7 +125,7 @@
                                    <i class="fa fa-user-circle"></i> Hannah Lim 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                                     <i class="fa fa-user-circle"></i> Julia Lee
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                    <i class="fa fa-user-circle"></i> Ryan Low 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                                     <i class="fa fa-user"></i> Azhar Kamar 
                                 </div>
                                 <div>
-                                    <i class="fa fa-bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
                                 </div>
                             </div>
                         </div>
@@ -191,6 +191,23 @@
             </div>
         </div>
     </div>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="bookmarkCanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Bookmarked Courses</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 p-2">
+                    <div id="bookmarkedCourses"></div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
     <footer>
         © 2021 SOI Learning Portal. All Rights Reserved.
         Privacy
@@ -208,6 +225,15 @@
             });
 
             $('[data-bs-toggle="tooltip"]').tooltip();
+
+            $(".bookmark").click(function(){
+                var card = $(this).closest('.card').clone();
+
+                $('#bookmarkedCourses').append(card);
+
+                var offcanvas = new bootstrap.Offcanvas(document.getElementById('bookmarkCanvas'));
+                offcanvas.show();
+            });
         });
     </script>
 </body>
