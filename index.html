@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
@@ -39,7 +41,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <form action="#" method="post" class="d-flex" >
+                <form action="#" method="post" class="d-flex">
                     <input type="text" class="form-control me-2" name="search" id="search" placeholder="Search">
                     <button type="submit" class="btn btn-primary">
                         <i class="fa fa-search"></i>
@@ -65,12 +67,13 @@
                         Expertly crafted courses that best fit your learning needs and preferences.
                     </p>
                     <div class="pt-3">
-                       <button class="btn btn-dark fw-bold" type="button">Browse Courses</button>
-                        <button class="btn btn-dark fw-bold" type="button">Be an Instructor</button> 
+                        <button class="btn btn-dark fw-bold" type="button">Browse Courses</button>
+                        <button class="btn btn-dark fw-bold" type="button">Be an Instructor</button>
                     </div>
                 </div>
                 <div class="col-md-5 text-center">
-                    <img src="assignmentImages/images.png" alt="thinking pose" class="img-fluid" width="100" height="100">
+                    <img src="assignmentImages/images.png" alt="thinking pose" class="img-fluid" width="100"
+                        height="100">
                 </div>
             </div>
         </div>
@@ -83,7 +86,7 @@
                     <i class="fa fa-book me-3"></i>
                     <div>
                         <h5>158 online courses</h5>
-                        <h6>Enjoy a variety of fresh topics</h6> 
+                        <h6>Enjoy a variety of fresh topics</h6>
                     </div>
                 </div>
             </div>
@@ -101,88 +104,187 @@
                     <i class="fa fa-history me-3"></i>
                     <div>
                         <h5>Lifetime access</h5>
-                        <h6>Learn on your schedule</h6> 
+                        <h6>Learn on your schedule</h6>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-primary bg-opacity-50">
-        <div class="container">
-            <div class="row pt-5 pb-5">
-                <h3>Featured Courses</h3>
-                <div class="col-sm-12 col-lg-3 p-2">
-                    <div class="card w-52">
-                        <img src="assignmentImages/html-5.png" class="card-img-top" alt="html">
-                        <div class="card-body">
-                            <h5 class="card-title">Introduction to HTML and CSS</h5>
-                            <div class="card-body">
-                                <i class="fa fa-clock"></i> 2h 30m
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <div>
-                                   <i class="fa fa-user-circle"></i> Hannah Lim 
+    <div class="carousel slide" id="cardCarousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid bg-primary bg-opacity-50">
+                    <div class="container">
+                        <div class="row pt-5 pb-5">
+                            <h3>Featured Courses</h3>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/html-5.png" class="card-img-top" alt="html">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 2h 30m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Hannah Lim
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/xd.png" class="card-img-top" alt="UIUX">
+                                    <div class="card-body">
+                                        <h5 class="card-title">User Experience and Interface Design</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 2h 45m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Julia Lee
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/apple.png" class="card-img-top" alt="Plants">
+                                    <div class="card-body">
+                                        <h5 class="card-title">IOS App Development using Xcode and Swift</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 4h 30m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Ryan Low
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/js.png" class="card-img-top" alt="Plants">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 3h 45m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user"></i> Azhar Kamar
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-lg-3 p-2">
-                    <div class="card w-52">
-                        <img src="assignmentImages/xd.png" class="card-img-top" alt="UIUX">
-                        <div class="card-body">
-                            <h5 class="card-title">User Experience and Interface Design</h5>
-                            <div class="card-body">
-                                <i class="fa fa-clock"></i> 2h 45m
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fa fa-user-circle"></i> Julia Lee
-                                </div>
-                                <div>
-                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-3 p-2">
-                    <div class="card w-52">
-                        <img src="assignmentImages/apple.png" class="card-img-top" alt="Plants">
-                        <div class="card-body">
-                            <h5 class="card-title">IOS App Development using Xcode and Swift</h5>
-                            <div class="card-body">
-                                <i class="fa fa-clock"></i> 4h 30m
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <div>
-                                   <i class="fa fa-user-circle"></i> Ryan Low 
-                                </div>
-                                <div>
-                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid bg-primary bg-opacity-50">
+                    <div class="container">
+                        <div class="row pt-5 pb-5">
+                            <h3>Featured Courses</h3>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/html-5.png" class="card-img-top" alt="html">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 2h 30m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Hannah Lim
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-3 p-2">
-                    <div class="card w-52">
-                        <img src="assignmentImages/js.png" class="card-img-top" alt="Plants">
-                        <div class="card-body">
-                            <h5 class="card-title">Front-end JavaScript Frameworks</h5>
-                            <div class="card-body">
-                                <i class="fa fa-clock"></i> 3h 45m
-                            </div>
-                            <div class="card-footer d-flex justify-content-between align-items-center">
-                                <div>
-                                    <i class="fa fa-user"></i> Azhar Kamar 
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/xd.png" class="card-img-top" alt="UIUX">
+                                    <div class="card-body">
+                                        <h5 class="card-title">User Experience and Interface Design</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 2h 45m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Julia Lee
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip" title="Add to bookmark"></i>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/apple.png" class="card-img-top" alt="Plants">
+                                    <div class="card-body">
+                                        <h5 class="card-title">IOS App Development using Xcode and Swift</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 4h 30m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user-circle"></i> Ryan Low
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-3 p-2">
+                                <div class="card w-52">
+                                    <img src="assignmentImages/js.png" class="card-img-top" alt="Plants">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+                                        <div class="card-body">
+                                            <i class="fa fa-clock"></i> 3h 45m
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <i class="fa fa-user"></i> Azhar Kamar
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-bookmark bookmark" data-bs-toggle="tooltip"
+                                                    title="Add to bookmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -190,7 +292,17 @@
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+
+
 
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="bookmarkCanvas">
         <div class="offcanvas-header">
@@ -202,9 +314,9 @@
                 <div class="col-sm-12 col-lg-3 p-2">
                     <div id="bookmarkedCourses"></div>
                 </div>
-                
+
             </div>
-            
+
         </div>
     </div>
 
@@ -217,8 +329,8 @@
     </footer>
     <!--https://shoukang49.github.io/L06-Assignment/index.html-->
     <script>
-        $(document).ready(function(){
-            var searchTags = ["HTML","CSS","PHP","JavaScript","Python","Java","iOS","Swift","React","Web Design","Web Development"];
+        $(document).ready(function () {
+            var searchTags = ["HTML", "CSS", "PHP", "JavaScript", "Python", "Java", "iOS", "Swift", "React", "Web Design", "Web Development"];
 
             $("#search").autocomplete({
                 source: searchTags
@@ -226,7 +338,7 @@
 
             $('[data-bs-toggle="tooltip"]').tooltip();
 
-            $(".bookmark").click(function(){
+            $(".bookmark").click(function () {
                 var card = $(this).closest('.card').clone();
 
                 $('#bookmarkedCourses').append(card);
@@ -237,4 +349,5 @@
         });
     </script>
 </body>
+
 </html>
